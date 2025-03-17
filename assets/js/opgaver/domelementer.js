@@ -75,7 +75,9 @@ array.from beskrivelse HER: https://developer.mozilla.org/en-US/docs/Web/JavaScr
 */
 
 // din kode her
-let rødecirkler = Array.from(purpleFigures);
+const textRed = Array.from(document.getElementsByClassName("purpleFigures"));
+
+textRed.map(element => element.style.backgroundColor = "red");
     
 
 
@@ -87,7 +89,11 @@ myElement.children[0].innerHTML til at ændre 1. child elements inner html.
 
 
 // din kode her
-
+textRed.forEach(element => {
+    if (element.children.length > 0) {
+        element.children[0].innerHTML = "RED";
+    }
+});
 
 
 /* opgave 4
