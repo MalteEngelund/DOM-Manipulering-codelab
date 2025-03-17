@@ -8,6 +8,13 @@ Du skal finde elementet med id="yellowFigure" og console logge det.
 */
 
 // din kode her
+let redFigure = document.getElementById('redFigure');
+    console.log(redFigure);
+
+let yellowFigure = document.getElementById('yellowFigure');
+    console.log(yellowFigure);
+
+
 
 
 /* opgave 1.2
@@ -17,6 +24,10 @@ farven på elementerne skal være blå. brug evt. elelement.style.backgroundColo
 
 
 // din kode her
+
+let element = document.getElementById('redFigure');
+    redFigure.style.backgroundColor = 'blue';
+    yellowFigure.style.backgroundColor = 'blue';
 
 
 
@@ -28,6 +39,21 @@ Du skal oprette følgende HTML elementer i Elementet med id opgaveTwo.
 
 
 // din kode her
+// Find elementet med id "opgaveTwo"
+let opgaveTwo = document.getElementById("opgaveTwo");
+
+// Opret h2 element
+let h2 = document.createElement("h2");
+h2.textContent = "Opgave 2.1 løsning";
+
+// Opret p element
+let p = document.createElement("p");
+p.textContent = "Jeg har løst opgave 2.1";
+
+// Tilføj elementerne til "opgaveTwo"
+opgaveTwo.appendChild(h2);
+opgaveTwo.appendChild(p);
+
 
 
 // opgave 3 liveHTML lists
@@ -37,6 +63,10 @@ Du skal finde alle elementer med klassen purpleFigures og console logge resultat
 
 // din kode her
 
+let purpleFigures = document.getElementsByClassName('purpleFigures');
+    console.log(purpleFigures);
+    
+
 
 /* opgave 3.2
 Du skal finde alle elementer med klassen purpleFigures og bruge array.from() til at konvertere listen
@@ -45,6 +75,9 @@ array.from beskrivelse HER: https://developer.mozilla.org/en-US/docs/Web/JavaScr
 */
 
 // din kode her
+let rødecirkler = Array.from(purpleFigures);
+    
+
 
 
 /* opgave 3.3
